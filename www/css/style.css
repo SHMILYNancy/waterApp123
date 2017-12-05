@@ -1,1 +1,50 @@
 /* Empty. Add your own CSS if you like */
+*{
+  margin: 0;
+  padding:0;
+}
+.mine-header-i1{
+  margin-right: 40px;
+}
+.mine-header-top{
+  position: fixed;
+  width:100%;
+  left:0;
+  color: #fff;
+  background: linear-gradient(to right,rgb(0,255,150),rgb(0,200,200));
+}
+.mine-header-bottom{
+  overflow: hidden;
+  height:100px;
+  width:100%;
+  background: linear-gradient(to right,rgb(0,255,150),rgb(0,200,200));
+  position: relative;
+  margin-top: -2px;
+  border-bottom: 1px solid #ddd;
+}
+.mine-header-bottom div{
+  width: 100%;
+  position: absolute;
+  top:30px;
+}
+.mine-header-bottom div>h3{
+  width:50px;
+  height:50px;
+  border:2px solid #eee;
+  border-radius: 50%;
+  text-align: center;
+  line-height:50px;
+}
+.mine-header-bottom div>h3>i{
+  color: #fff;
+  font-size: 30px;
+}
+.mine-header-bottom div>span{
+  font-size: 18px;
+  display: inline-block;
+  top:15px;
+  left: 60px;
+  position: absolute;
+  color: #fff;
+  font-weight:900;
+}
