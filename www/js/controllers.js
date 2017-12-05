@@ -25,6 +25,9 @@ angular.module('starter.controllers', [])
   .controller('MineCtrl', function($scope, $stateParams, Chats) {
 
   })
+  .controller('SetCtrl', function($scope, $stateParams, Chats) {
+
+  })
 
   .controller('LoginCtrl', function($scope, $stateParams, Chats) {
 

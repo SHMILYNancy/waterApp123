@@ -68,6 +68,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.set', {
+      url: '/set',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-set.html',
+          controller: 'SetCtrl'
+        }
+      }
+    })
+    .state('tab.news', {
+      url: '/news',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-news.html'
+        }
+      }
+    })
     .state('tab.login', {
       url: '/login',
       views: {
