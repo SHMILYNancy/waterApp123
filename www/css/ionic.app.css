@@ -9927,10 +9927,6 @@ a:hover {
   font-weight: 900;
   margin-left: 10px; }
 
-.bar .title {
-  margin: 0;
-  width: 100%; }
-
 .mine-part1 {
   padding: 20px 0;
   width: 100%;
@@ -10082,3 +10078,12 @@ a:hover {
 .dd_title a {
   text-decoration: none;
   color: #646464; }
+
+.bar.bar-stable {
+  background: linear-gradient(to right, #00ff96, #00c8c8); }
+
+.item-icon-right {
+  padding-right: 0; }
+
+.title.title-center.header-item {
+  left: 0 !important; }
