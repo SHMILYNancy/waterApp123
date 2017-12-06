@@ -1,7 +1,85 @@
-<ion-view view-title="{{title}}">
-  <ion-content class="padding">
-    <ion-list>
-      qqqqqqqq
-    </ion-list>
+<ion-view view-title="{{title}}" hide-nav-bar="true">
+  <ion-content class="wrapper">
+    <div class="header">
+      <span></span>
+      <input type="text">
+    </div>
+    <!--轮播图-->
+    <ion-slide-box class="my-slide" auto-play="true" does-continue="true" slide-interval=2000>
+      <ion-slide>
+        <div class="box banner"><img src="./img/top2.jpg" /> </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box banner"><img src="./img/top2.jpg" /></div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box banner"><img src="./img/top2.jpg" /></div>
+      </ion-slide>
+    </ion-slide-box>
+    <!--内容-->
+    <ul class="ul">
+      <li>
+        <a href="#">
+          <img src="./img/yjds.png" alt="">
+          <p>一键订水</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./img/hzpp.png" alt="">
+          <p>合作品牌</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./img/zxcz.png" alt="">
+          <p>在线充值</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./img/hdzq.png" alt="">
+          <p>活动专区</p>
+        </a>
+      </li>
+
+    </ul>
+    <div class="part1">
+      <div class="left">
+        <img src="./img/hongniu.png" alt="">
+        <div>
+          <span>红牛</span>
+          <p>销量:643</p>
+          <i>￥0.01</i>
+        </div>
+      </div>
+      <div class="right">
+        <div class="r-t">
+          <img src="./img/whaha.png" alt="">
+          <div>
+            <span>哇哈哈桶装水</span>
+            <p>销量:297</p>
+            <i>￥20.00</i>
+          </div>
+        </div>
+        <div class="r-b">
+          <img src="./img/yibao.png" alt="">
+          <div>
+            <span>怡宝桶装水</span>
+            <p>销量:4</p>
+            <i>￥30.00</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part2">
+      <img src="./img/cup.png" alt="">
+      <div class="text">
+        <span>酸性水?碱性水?</span>
+        <p>测一测你喝的是什么水?</p>
+      </div>
+      <img src="./img/hand.png" alt="">
+    </div>
   </ion-content>
 </ion-view>
+

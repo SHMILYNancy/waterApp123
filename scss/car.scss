@@ -1,0 +1,105 @@
+.bar-header{
+  padding: 0;
+}
+
+.bar .title{
+  margin: 0;
+  background: linear-gradient(to right,rgb(0,255,150),rgb(0,200,200));
+}
+.bar.bar-stable .title{
+  color:white;
+}
+.shopped{
+  background: #f7f7f7;
+  padding: 10px;
+}
+.shopped_list ion-item:first-child{
+  border-top: none;
+}
+.shopped_list img{
+  float: left;
+  width: 20%;
+  height: 80%;
+}
+.good_content{
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+}
+.good_content h3{
+  font-size:18px;
+  margin-top: 10px;
+}
+.good_content p{
+  font-size: 16px;
+  //margin-top: 10px;
+  line-height: 30px;
+}
+.good_content p .zgood_price{
+  color: #ed7c62;
+}
+.good_content p>.zcount{
+  float: right;
+  margin-right: 10px;
+  border: 1px solid #e6e6e6;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+.good_content p>.zcount .fh{
+  display: inline-block;
+  width: 30px;
+
+}
+.good_content p>.zcount .jia{
+  float: left;
+  border-right: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+.good_content p>.zcount .jian{
+  float: right;
+  border-left: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+.car {
+  //position: relative;
+}
+.g_count{
+  width: 100%;
+  position: fixed;
+  font-size: 20px;
+  height: 50px;
+  color: white;
+  line-height: 50px;
+  bottom:48px;
+
+}
+.g_count p{
+  display: inline-block;
+  width: 70%;
+  margin: 0;
+  padding-left: 20px;
+  background: #323232;
+}
+.g_count .gomon{
+  display: inline-block;
+  background: #fb4e44;
+  width: 30%;
+  text-align: center;
+
+}
+
+
+.dd_title {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background: white;
+}
+.dd_title a{
+  text-decoration: none;
+  color: #646464;
+}
+
