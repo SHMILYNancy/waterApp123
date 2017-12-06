@@ -10356,7 +10356,8 @@ a:hover {
   border-style: none;
   padding: 5px;
   margin-left: 10%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  color: white; }
 
 .bar.bar-stable {
   background: linear-gradient(to right, #00ff96, #00c8c8); }
