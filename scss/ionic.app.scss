@@ -20,9 +20,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "nofu";
 @import "tab-home";
 @import "mine";
 @import "car";
+
 
 //导航条样式
 .bar.bar-stable{

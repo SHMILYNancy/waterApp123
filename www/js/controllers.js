@@ -36,7 +36,15 @@ angular.module('starter.controllers', [])
   .controller('LoginCtrl', function($scope, $stateParams, Chats) {
 
   })
+  .controller('NofuCtrl', function($scope, $stateParams, Chats) {
 
+  })
+  .controller('CooperateCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('DiscountCtrl', function($scope, $stateParams, Chats) {
+
+  })
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
