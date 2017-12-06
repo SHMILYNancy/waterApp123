@@ -9927,9 +9927,6 @@ a:hover {
   font-weight: 900;
   margin-left: 10px; }
 
-.bar .title {
-  width: 100%; }
-
 .mine-part1 {
   padding: 20px 0;
   width: 100%;
@@ -9999,4 +9996,5 @@ a:hover {
   left: 0 !important; }
 
 .bar.bar-stable .title {
-  color: #fff; }
+  color: #fff;
+  width: 100%; }
