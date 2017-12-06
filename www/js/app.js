@@ -92,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/set',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-set.html',
+          templateUrl: 'templates/mine/mine-set.html',
           controller: 'SetCtrl'
         }
       }
@@ -101,7 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/news',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-news.html'
+          templateUrl: 'templates/mine/mine-news.html'
         }
       }
     })
@@ -109,7 +109,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/myMoney',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-myMoney.html',
+          templateUrl: 'templates/mine/mine-myMoney.html',
           controller: 'myMoneyCtrl'
         }
       }
@@ -118,7 +118,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/myTicket',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-myTicket.html',
+          templateUrl: 'templates/mine/mine-myTicket.html',
           controller: 'myTicketCtrl'
         }
       }
@@ -127,7 +127,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/myInteg',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-myInteg.html',
+          templateUrl: 'templates/mine/mine-myInteg.html',
           controller: 'myIntegCtrl'
         }
       }
@@ -137,7 +137,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/shdz',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-shdz.html'
+          templateUrl: 'templates/mine/mine-shdz.html'
         }
       }
     })
@@ -145,7 +145,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/yjqgl',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-yjqgl.html'
+          templateUrl: 'templates/mine/mine-yjqgl.html'
         }
       }
     })
@@ -153,7 +153,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/smyz',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-smyz.html'
+          templateUrl: 'templates/mine/mine-smyz.html'
         }
       }
     })
@@ -161,7 +161,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/kfp',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-kfp.html'
+          templateUrl: 'templates/mine/mine-kfp.html'
         }
       }
     })
@@ -169,7 +169,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/jfsc',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-jfsc.html'
+          templateUrl: 'templates/mine/mine-jfsc.html'
         }
       }
     })
@@ -177,7 +177,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/yjfk',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-yjfk.html'
+          templateUrl: 'templates/mine/mine-yjfk.html'
         }
       }
     })
@@ -185,7 +185,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/zxkf',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-zxkf.html'
+          templateUrl: 'templates/mine/mine-zxkf.html'
         }
       }
     })
@@ -193,7 +193,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/wdfx',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-wdfx.html'
+          templateUrl: 'templates/mine/mine-wdfx.html'
         }
       }
     })
@@ -201,7 +201,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/gywm',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-gywm.html'
+          templateUrl: 'templates/mine/mine-gywm.html'
         }
       }
     })
