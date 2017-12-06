@@ -9947,19 +9947,6 @@ button.button {
   background: red;
   color: #fff; }
 
-ion-content.scroll-content.ionic-scroll.has-tabs {
-  background: #f5f5f5; }
-
-.hdtop1 {
-  width: 100%;
-  display: block; }
-
-p.discount {
-  font-size: 16px;
-  background-color: #fff;
-  margin-bottom: 10px;
-  padding: 10px; }
-
 .wrapper {
   width: 100%;
   height: 100%;
@@ -10035,7 +10022,7 @@ p.discount {
   text-align: right; }
 
 .part1 div span {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder; }
 
 .part1 div i {
@@ -10212,12 +10199,72 @@ a:hover {
 
 .integ-header {
   overflow: hidden;
-  height: 200px;
+  height: 180px;
   width: 100%;
   background: linear-gradient(to right, #00ff96, #00c8c8);
   position: relative;
   margin-top: -2px;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  text-align: center; }
+
+.integ-header > b {
+  color: #fff;
+  font-size: 24px;
+  display: block;
+  margin-top: 10%; }
+
+.integ-header > p {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+  display: block; }
+
+.integ-header > span {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  line-height: 25px;
+  background-color: #ff9900;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-top: 30px; }
+
+.integ-over {
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  background-color: #fff;
+  width: 90%;
+  height: 445px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 5px 5px #888888; }
+
+.integ-over > p {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #999; }
+
+.integ-over-div {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+.integ-over-div > h5, .integ-over-div > h6 {
+  font-size: 14px;
+  line-height: 25px; }
+
+.integ-over-div > span {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: #999; }
 
 .gywm .about-top > p {
   line-height: 25px;
@@ -10241,7 +10288,7 @@ a:hover {
   width: 100%;
   text-align: center;
   position: fixed;
-  bottom: -120px; }
+  bottom: -10%; }
 
 .gywm .about-bottom > span {
   color: #2cf; }
@@ -10423,6 +10470,7 @@ a:hover {
 
 button.button.back-button.buttons.button-clear.header-item {
   color: #fff; }
+
 ion-content {
   background-color: #f7f7f7; }
 
