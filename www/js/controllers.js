@@ -22,6 +22,16 @@ angular.module('starter.controllers', [])
   .controller('SetCtrl', function($scope, $stateParams, Chats) {
 
   })
+  .controller('myMoneyCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('myTicketCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('myIntegCtrl', function($scope, $stateParams, Chats) {
+
+  })
+
 
   .controller('LoginCtrl', function($scope, $stateParams, Chats) {
 

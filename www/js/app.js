@@ -85,6 +85,35 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.myMoney', {
+      url: '/myMoney',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-myMoney.html',
+          controller: 'myMoneyCtrl'
+        }
+      }
+    })
+    .state('tab.myTicket', {
+      url: '/myTicket',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-myTicket.html',
+          controller: 'myTicketCtrl'
+        }
+      }
+    })
+    .state('tab.myInteg', {
+      url: '/myInteg',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-myInteg.html',
+          controller: 'myIntegCtrl'
+        }
+      }
+    })
+
+
     .state('tab.login', {
       url: '/login',
       views: {

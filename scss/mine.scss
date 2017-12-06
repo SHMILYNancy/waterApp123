@@ -9,13 +9,7 @@ a:hover{
 .mine-header-i1{
   margin-right: 40px;
 }
-.mine-header-top{
-  position: fixed;
-  width:100%;
-  left:0;
-  color: #fff;
-  background: linear-gradient(to right,rgb(0,255,150),rgb(0,200,200));
-}
+
 .mine-header-bottom{
   overflow: hidden;
   height:100px;
@@ -69,11 +63,11 @@ a:hover{
   width:33%;
   text-align: center;
 }
-.mine-part1>ul>li>img{
+.mine-part1>ul>li img{
   width:40px;
   height:40px;
 }
-.mine-part1>ul>li>span{
+.mine-part1>ul>li span{
   display: block;
 }
 .mine-part2{
