@@ -38,21 +38,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-  //定义显示tab的showTabs指令
-  //   .directive("showTabs", function($rootScope) {
-  //     return {
-  //       restrict: 'AE',
-  //       link: function($scope) {
-  //         $rootScope.hideTabs = '  ';
-  //       }
-  //     }
-  //   })
 
 
 
 
 
-.config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -101,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/set',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-set.html',
+          templateUrl: 'templates/mine/mine-set.html',
           controller: 'SetCtrl'
         }
       }
@@ -110,7 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/news',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-news.html'
+          templateUrl: 'templates/mine/mine-news.html'
         }
       }
     })
@@ -118,7 +109,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/myMoney',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-myMoney.html',
+          templateUrl: 'templates/mine/mine-myMoney.html',
           controller: 'myMoneyCtrl'
         }
       }
@@ -127,7 +118,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/myTicket',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-myTicket.html',
+          templateUrl: 'templates/mine/mine-myTicket.html',
           controller: 'myTicketCtrl'
         }
       }
@@ -136,11 +127,87 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/myInteg',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-myInteg.html',
+          templateUrl: 'templates/mine/mine-myInteg.html',
           controller: 'myIntegCtrl'
         }
       }
     })
+
+    .state('tab.shdz', {
+      url: '/shdz',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-shdz.html'
+        }
+      }
+    })
+    .state('tab.yjqgl', {
+      url: '/yjqgl',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-yjqgl.html'
+        }
+      }
+    })
+    .state('tab.smyz', {
+      url: '/smyz',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-smyz.html'
+        }
+      }
+    })
+    .state('tab.kfp', {
+      url: '/kfp',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-kfp.html'
+        }
+      }
+    })
+    .state('tab.jfsc', {
+      url: '/jfsc',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-jfsc.html'
+        }
+      }
+    })
+    .state('tab.yjfk', {
+      url: '/yjfk',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-yjfk.html'
+        }
+      }
+    })
+    .state('tab.zxkf', {
+      url: '/zxkf',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-zxkf.html'
+        }
+      }
+    })
+    .state('tab.wdfx', {
+      url: '/wdfx',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-wdfx.html'
+        }
+      }
+    })
+    .state('tab.gywm', {
+      url: '/gywm',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-gywm.html'
+        }
+      }
+    })
+
+
+
 
 
     .state('tab.login', {
