@@ -5,6 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
+
+
+
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
@@ -22,6 +25,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 })
+
+
+  .directive('hideTabs',function($rootScope){
+    return {
+      restrict: 'AE',
+      link: function ($scope) {
+        $rootScope.hideTabs = 'tabs-item-hide';
+        $scope.$on('$destroy',function(){
+          $rootScope.hideTabs = ' ';
+        })
+      }
+    }
+  })
+  //定义显示tab的showTabs指令
+  //   .directive("showTabs", function($rootScope) {
+  //     return {
+  //       restrict: 'AE',
+  //       link: function($scope) {
+  //         $rootScope.hideTabs = '  ';
+  //       }
+  //     }
+  //   })
+
+
+
+
 
 .config(function($stateProvider, $urlRouterProvider) {
 
