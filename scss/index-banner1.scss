@@ -1,0 +1,72 @@
+.banner-detail{
+  text-align: center;
+}
+.banner{
+  width: 100%;
+  height:100px;
+  background-color: #fff;
+}
+.banner-detail img{
+  width: 40px;
+  height: 80px;
+  margin-top:10px;
+}
+.nonfu-info{
+  background: #fff;
+  line-height:30px;
+  font-size:20px;
+  text-indent:10px;
+}
+.nonfu-info span{
+  display: inline-block;
+  color: #f00;
+  text-indent: 10px;
+}
+.nonfu-info>ul{
+  width: 100%;
+  background-color: #fff;
+  height: 40px;margin-bottom: 10px;}
+.nonfu-info>ul li{
+  float: left;
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+  font-size:16px;
+}
+.nonfu-info>ul li:first-child{
+  width:40%;
+}
+.s-spxq {
+  background-color: #fff;
+}
+.s-spxq h3{
+  height:60px;
+  line-height:60px;
+  font-weight:lighter;
+  text-indent: 10px;
+  border-bottom:2px solid #eee;
+}
+.s-spxq >img{
+  display: block;
+  width: 100%;
+}
+.s-spxq >ul >li{
+  float: left;
+  width: 49%;
+  height: 200px;
+  margin-bottom:10px;
+  margin-right: 2%;
+}
+.s-spxq >ul >li>img{
+  width: 100%;
+  height: 200px;
+}
+.s-spxq >ul >li.even{
+  margin-right:0;
+}
+
+
+
+
+
+

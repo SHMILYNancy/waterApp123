@@ -9970,6 +9970,13 @@ a:hover {
 .mine-header-i1 {
   margin-right: 40px; }
 
+.mine-header-top {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  color: #fff;
+  background: linear-gradient(to right, #00ff96, #00c8c8); }
+
 .mine-header-bottom {
   overflow: hidden;
   height: 100px;
@@ -10007,6 +10014,10 @@ a:hover {
   font-weight: 900;
   margin-left: 10px; }
 
+.bar .title {
+  margin: 0;
+  width: 100%; }
+
 .mine-part1 {
   padding: 20px 0;
   width: 100%;
@@ -10021,13 +10032,12 @@ a:hover {
   width: 33%;
   text-align: center; }
 
-.mine-part1 > ul > li img {
+.mine-part1 > ul > li > img {
   width: 40px;
   height: 40px; }
 
-.mine-part1 > ul > li span {
-  display: block;
-  font-size: 12px; }
+.mine-part1 > ul > li > span {
+  display: block; }
 
 .mine-part2 {
   font-size: 0;
@@ -10042,7 +10052,7 @@ a:hover {
   display: inline-block;
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ddd;
-  padding: 20px 15px; }
+  padding: 20px; }
 
 .mine-part2 div > img {
   width: 30px;
@@ -10066,42 +10076,6 @@ a:hover {
   display: block;
   font-size: 16px;
   color: #999; }
-
-.integ-header {
-  overflow: hidden;
-  height: 200px;
-  width: 100%;
-  background: linear-gradient(to right, #00ff96, #00c8c8);
-  position: relative;
-  margin-top: -2px;
-  border-bottom: 1px solid #ddd; }
-
-.gywm .about-top > p {
-  line-height: 25px;
-  text-align: justify; }
-
-.gywm .about-cont {
-  width: 100%;
-  text-align: center;
-  margin-top: 70px; }
-
-.gywm .about-cont > span {
-  display: block;
-  font-size: 12px;
-  color: #999; }
-
-.gywm .about-cont > img {
-  width: 130px;
-  height: 130px; }
-
-.gywm .about-bottom {
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: -120px; }
-
-.gywm .about-bottom > span {
-  color: #2cf; }
 
 .bar-header {
   padding: 0; }
@@ -10204,20 +10178,3 @@ a:hover {
 
 .title.title-center.header-item {
   left: 0 !important; }
-
-.bar.bar-stable .title {
-  color: #fff;
-  width: 100%; }
-
-button.button.back-button.buttons.button-clear.header-item {
-  color: #fff; }
-
-ion-content {
-  background-color: #f7f7f7; }
-
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-  padding: 0;
-  margin: 0;
-  font-family: "微软雅黑","宋体",Arail,Tabhoma;
-  font-size: 13px;
-  text-align: left; }
