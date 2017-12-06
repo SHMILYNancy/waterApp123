@@ -1,0 +1,16 @@
+h3.y_titlet {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px;
+}
+.y_time {
+  position: relative;
+  padding:0 10px;
+}
+.y_time span:nth-child(1){
+  color: #666;
+}
+.y_time span:nth-child(2){
+  color: green;
+  float: right;
+}

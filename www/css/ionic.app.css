@@ -9960,6 +9960,22 @@ p.discount {
   margin-bottom: 10px;
   padding: 10px; }
 
+h3.y_titlet {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px; }
+
+.y_time {
+  position: relative;
+  padding: 0 10px; }
+
+.y_time span:nth-child(1) {
+  color: #666; }
+
+.y_time span:nth-child(2) {
+  color: green;
+  float: right; }
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -10014,7 +10030,8 @@ p.discount {
 
 .ul li p {
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .part1 {
   width: 100%;
@@ -10035,7 +10052,7 @@ p.discount {
   text-align: right; }
 
 .part1 div span {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bolder; }
 
 .part1 div i {
@@ -10423,6 +10440,7 @@ a:hover {
 
 button.button.back-button.buttons.button-clear.header-item {
   color: #fff; }
+
 ion-content {
   background-color: #f7f7f7; }
 

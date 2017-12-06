@@ -273,7 +273,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+  .state('tab.ph', {
+    url: '/ph',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-ph.html'
+      }
+    }
+  })
   .state('tab.account', {
     url: '/account',
     views: {
