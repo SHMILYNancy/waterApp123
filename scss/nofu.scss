@@ -1,10 +1,10 @@
-
-
 img.img {
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: block;
   height:250px;
+}
+.slider-pager {
+  bottom: 0;
 }
 p{
   padding-left:10px;
@@ -25,10 +25,7 @@ p.price {
   color: #444;
   margin-right: 55px;
 }
-h5.backg {
-  background: #f7f6f6;
-  height: 15px;
-}
+
 h4{
   padding:5px 10px;
   color: #666;
@@ -62,11 +59,18 @@ ion-footer-bar.bar-assertive.bar.bar-footer.has-tabs {
 }
 .ion-ios-cart:before {
   font-size: 26px;
-  color: #46f0cc;
+  color: #fff;
   border-radius: 50%;
   background: #00BCD4;
   width: 35px;
   text-align: center;
   height: 35px;
   line-height: 35px;
+}
+.nofu-footer{
+  background: #323232;
+}
+button.button {
+  background: red;
+  color: #fff;
 }
