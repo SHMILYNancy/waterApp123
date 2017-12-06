@@ -23,3 +23,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "mine";
 @import "car";
 
+//导航条样式
+.bar.bar-stable{
+  background: linear-gradient(to right, #00ff96, #00c8c8);
+}
+.item-icon-right {
+  padding-right: 0;
+}
+.title.title-center.header-item {
+  left: 0 !important;
+}
