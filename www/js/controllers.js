@@ -7,7 +7,7 @@ angular.module('starter.controllers', [])
   })
 
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('ChatsCtrl','$scope', function($scope, Chats) {
 
 
   $scope.chats = Chats.all();
@@ -17,6 +17,9 @@ angular.module('starter.controllers', [])
 })
 
   .controller('MineCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('yeCtrl', function($scope, $stateParams, Chats) {
 
   })
   .controller('SetCtrl', function($scope, $stateParams, Chats) {

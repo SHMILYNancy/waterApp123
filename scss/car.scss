@@ -102,4 +102,101 @@
   text-decoration: none;
   color: #646464;
 }
+.myMon{
+  height: 100px;
+  background: linear-gradient(to right,rgb(0,255,150),rgb(0,200,200));
+  width: 100%;
+}
+.dd_title a{
+  text-decoration: none;
+  color: #646464;
+}
+.mymons{
+  padding-top: 30px;
+}
+.mymons p {
+  text-align: center;
+  color: white;
+}
+.myprice{
+  font-size: 26px;
+}
+.recharge{
+  //height: 20px;
+  background: white;
+  font-size: 18px;
+  padding:10px;
+  margin-top: 10px;
 
+}
+.rechargemon{
+  margin-left: 10px;
+}
+.i_right{
+  float: right;
+}
+.kon{
+  position: absolute;
+  right: 10px;
+}
+.ch_inp{
+background: white;
+}
+.ch_inp p{
+  font-size: 16px;
+  padding: 10px;
+}
+.ch_inp input{
+  padding-left: 10px;
+  width: 100%;
+  border-style: none;
+
+}
+.ch_box{
+  width: 100%;
+  background: white;
+  margin-top: 10px;
+}
+.ch_box p{
+  font-size: 16px;
+  padding: 10px;
+}
+.ch_box .z_chance{
+  display: flex;
+  flex-wrap:wrap;
+}
+.ch_box .z_chance span{
+  border: 1px solid #0bc5aa;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 3px;
+  margin: 5px;
+}
+.z_apply{
+  margin-top: 10px;
+  background: white;
+}
+
+.z_apply p{
+  padding: 5px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.z_apply img{
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.z_btnapply{
+  width: 80%;
+  background: #18d39b;
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+  margin-left: 10%;
+  margin-top: 30px;
+  color: white;
+}
