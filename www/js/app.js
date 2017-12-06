@@ -38,21 +38,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-  //定义显示tab的showTabs指令
-  //   .directive("showTabs", function($rootScope) {
-  //     return {
-  //       restrict: 'AE',
-  //       link: function($scope) {
-  //         $rootScope.hideTabs = '  ';
-  //       }
-  //     }
-  //   })
 
 
 
 
 
-.config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -141,6 +132,82 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
+    .state('tab.shdz', {
+      url: '/shdz',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-shdz.html'
+        }
+      }
+    })
+    .state('tab.yjqgl', {
+      url: '/yjqgl',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-yjqgl.html'
+        }
+      }
+    })
+    .state('tab.smyz', {
+      url: '/smyz',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-smyz.html'
+        }
+      }
+    })
+    .state('tab.kfp', {
+      url: '/kfp',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-kfp.html'
+        }
+      }
+    })
+    .state('tab.jfsc', {
+      url: '/jfsc',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-jfsc.html'
+        }
+      }
+    })
+    .state('tab.yjfk', {
+      url: '/yjfk',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-yjfk.html'
+        }
+      }
+    })
+    .state('tab.zxkf', {
+      url: '/zxkf',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-zxkf.html'
+        }
+      }
+    })
+    .state('tab.wdfx', {
+      url: '/wdfx',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-wdfx.html'
+        }
+      }
+    })
+    .state('tab.gywm', {
+      url: '/gywm',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine-gywm.html'
+        }
+      }
+    })
+
+
+
 
 
     .state('tab.login', {
