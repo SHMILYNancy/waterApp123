@@ -8,8 +8,9 @@
 }
 .mine-header-top{
   position: fixed;
-  width:100%!important;
+  width:100%;
   left:0;
+  color: #fff;
   background: linear-gradient(to right,rgb(0,255,150),rgb(0,200,200));
 }
 .mine-header-bottom{
@@ -21,12 +22,12 @@
   margin-top: -2px;
   border-bottom: 1px solid #ddd;
 }
-.mine-header-bottom>div{
+.mine-header-bottom div{
   width: 100%;
   position: absolute;
-  top:40px;
+  top:30px;
 }
-.mine-header-bottom>div>h3{
+.mine-header-bottom div>h3{
   width:50px;
   height:50px;
   border:2px solid #eee;
@@ -34,11 +35,11 @@
   text-align: center;
   line-height:50px;
 }
-.mine-header-bottom>div>h3>i{
+.mine-header-bottom div>h3>i{
   color: #fff;
   font-size: 30px;
 }
-.mine-header-bottom>div>span{
+.mine-header-bottom div>span{
   font-size: 18px;
   display: inline-block;
   top:15px;
