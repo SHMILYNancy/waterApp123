@@ -22,3 +22,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 @import "mine";
 
+//导航条样式
+.bar.bar-stable{
+  background: linear-gradient(to right, #00ff96, #00c8c8);
+}
+.item-icon-right {
+  padding-right: 0;
+}
+.title.title-center.header-item {
+  left: 0 !important;
+}
