@@ -181,6 +181,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.cooperate', {
+    url: '/cooperate',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-cooperate.html',
+        controller: 'CooperateCtrl'
+      }
+    }
+  })
+  .state('tab.discount', {
+    url: '/discount',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-discount.html',
+        controller: 'DiscountCtrl'
+      }
+    }
+  })
+
   .state('tab.account', {
     url: '/account',
     views: {

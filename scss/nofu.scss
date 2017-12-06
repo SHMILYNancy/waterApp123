@@ -1,5 +1,7 @@
-.img{
-  width:100%;
+
+
+img.img {
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
   height:250px;
@@ -40,6 +42,7 @@ h4{
 }
 .explain p:nth-child(2){
   font-size: 16px;
+  color: red;
 }
 .explain p:nth-child(3),.explain p:nth-child(4){
   font-size: 14px;
@@ -55,11 +58,11 @@ p.con-msg{
   padding-right:10px;
 }
 ion-footer-bar.bar-assertive.bar.bar-footer.has-tabs {
-  background: #000000b0;
+  background-color: #0000b0;
 }
 .ion-ios-cart:before {
   font-size: 26px;
-  color: #46ff00cc;
+  color: #46f0cc;
   border-radius: 50%;
   background: #00BCD4;
   width: 35px;
