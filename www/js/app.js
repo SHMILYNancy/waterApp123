@@ -234,6 +234,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.regist', {
+      url: '/regist',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/tab-regist.html'
+        }
+      }
+    })
+    .state('tab.reset', {
+      url: '/reset',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/tab-reset.html'
+        }
+      }
+    })
 
   .state('tab.chats', {
       url: '/chats',

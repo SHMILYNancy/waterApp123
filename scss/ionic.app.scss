@@ -27,9 +27,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "car";
 @import "index-banner1";
 @import "index-banner2";
-
-
+@import "login";
+@import "sure";
+@import "regset";
+@import "reset";
 //导航条样式
+span.default-title {
+  color: red;
+  visibility: hidden;
+}
 .bar.bar-stable{
   background: linear-gradient(to right, #00ff96, #00c8c8);
 }
