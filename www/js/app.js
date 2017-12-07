@@ -112,6 +112,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
     .state('tab.news', {
       url: '/news',
       views: {
@@ -129,6 +130,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.ye', {
+      url: '/ye',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/myMoney-ye.html',
+          controller: 'yeCtrl'
+        }
+      }
+    })
+    .state('tab.chong', {
+      url: '/chong',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/myMoney-chong.html'
+        }
+      }
+    })
+
+
     .state('tab.myTicket', {
       url: '/myTicket',
       views: {
