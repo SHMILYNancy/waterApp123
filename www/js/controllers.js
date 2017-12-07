@@ -5,9 +5,17 @@ angular.module('starter.controllers', [])
     $scope.title='首页';
 
   })
+  // .controller('GeolocationCtrl', function($scope,$cordovaGeolocation) {
+  //   $cordovaGeolocation.getCurrentPosition().then(function (position) {
+  //     console.log(position);
+  //   }).catch(function (err) {
+  //     console.log(err);
+  //   })
+  //
+  // })
+// 坐标
 
-
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('ChatsCtrl','$scope', function($scope, Chats) {
 
 
   $scope.chats = Chats.all();
@@ -17,6 +25,9 @@ angular.module('starter.controllers', [])
 })
 
   .controller('MineCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('yeCtrl', function($scope, $stateParams, Chats) {
 
   })
   .controller('SetCtrl', function($scope, $stateParams, Chats) {

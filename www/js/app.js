@@ -8,8 +8,8 @@
 
 
 
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
-
+angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
+//,'ionic.native'
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -112,6 +112,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+
     .state('tab.news', {
       url: '/news',
       views: {
@@ -129,6 +130,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.ye', {
+      url: '/ye',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/myMoney-ye.html',
+          controller: 'yeCtrl'
+        }
+      }
+    })
+    .state('tab.chong', {
+      url: '/chong',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/myMoney-chong.html'
+        }
+      }
+    })
+
+
     .state('tab.myTicket', {
       url: '/myTicket',
       views: {
@@ -297,7 +317,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+  .state('tab.ph', {
+    url: '/ph',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-ph.html'
+      }
+    }
+  })
   .state('tab.account', {
     url: '/account',
     views: {
