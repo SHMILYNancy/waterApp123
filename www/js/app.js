@@ -78,7 +78,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+    .state('tab.banner1', {
+      url: '/banner1',
+      views: {
+        'tab-home': {
+          templateUrl: 'templates/home-banner1.html'
+        }
+      }
+    })
+    .state('tab.banner2', {
+      url: '/banner2',
+      views: {
+        'tab-home': {
+          templateUrl: 'templates/home-banner2.html'
+        }
+      }
+    })
     .state('tab.mine', {
       url: '/mine',
       views: {
@@ -298,6 +313,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/home');
 
 });
