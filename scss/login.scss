@@ -3,12 +3,18 @@
   height: 100%;
   position: relative;
 }
+.l-bg a {
+  width: 30px;
+  height: 30px;
+}
 .ion-android-close {
   position: absolute;
   top: 15px;
   left: 15px;
   font-size: 30px;
   color: #d2d2d2;
+  width: 30px;
+  height: 30px;
 }
 .l-log {
   position: fixed;
@@ -63,7 +69,7 @@
 }
 .l-sign .l-reg {
   color: grey;
-  margin-right: 130px;
+  margin-right: 100px;
 }
 .l-sign .l-res {
   color: grey;

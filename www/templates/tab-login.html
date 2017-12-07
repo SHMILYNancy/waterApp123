@@ -1,4 +1,4 @@
-<ion-view hide-nav-bar="true" hide-tabs="">
+<ion-view hide-nav-bar="true" hide-tabs="" view-title="">
   <ion-content class="cont">
     <div class="l-bg">
       <img src="./img/bg.png" alt="">
@@ -10,11 +10,13 @@
           <a class="l-des">验证码登录</a>
         </div>
         <div class="l-inp">
-          <input type="text" placeholder="用户名/手机号">
-          <input type="password" name="" placeholder="密码">
+          <input type="text" placeholder="用户名/手机号"
+                 name="user" id="num">
+          <input type="password" name="" placeholder="密码"
+                 name="pass" id="word">
         </div>
       <div class="l-login">
-        <button>登录</button>
+        <button id="btn">登录</button>
       </div>
       <div class="l-sign">
         <a class="l-reg" href="#/tab/regist">账号注册</a>

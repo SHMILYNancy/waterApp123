@@ -10653,12 +10653,18 @@ a:hover {
   height: 100%;
   position: relative; }
 
+.l-bg a {
+  width: 30px;
+  height: 30px; }
+
 .ion-android-close {
   position: absolute;
   top: 15px;
   left: 15px;
   font-size: 30px;
-  color: #d2d2d2; }
+  color: #d2d2d2;
+  width: 30px;
+  height: 30px; }
 
 .l-log {
   position: fixed;
@@ -10713,7 +10719,7 @@ a:hover {
 
 .l-sign .l-reg {
   color: grey;
-  margin-right: 130px; }
+  margin-right: 100px; }
 
 .l-sign .l-res {
   color: grey; }
@@ -10785,8 +10791,7 @@ a:hover {
   border-bottom: 1px solid #b2b2b2;
   margin-left: 10px;
   padding-top: 15px;
-  padding-bottom: 15px;
-  position: relative; }
+  padding-bottom: 15px; }
 
 .l-phon span {
   font-size: 25px;
@@ -10802,11 +10807,11 @@ a:hover {
   padding-left: 20px; }
 
 .l-phon .l-may {
-  float: right;
-  font-size: 20px;
-  position: absolute;
-  top: 35%;
-  right: 0; }
+  border: 1px solid #ffffff;
+  width: 110px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px; }
 
 .l-reg button {
   width: 95%;
@@ -10815,6 +10820,9 @@ a:hover {
   color: #ffffff;
   font-size: 20px;
   margin: 40px 0 20px 3px; }
+
+.l-reg button:hover {
+  background-color: #00c8c8; }
 
 .l-reg {
   text-align: center; }
