@@ -325,6 +325,14 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.active', {
+    url: '/active',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-active-details.html'
+      }
+    }
+  })
   .state('tab.account', {
     url: '/account',
     views: {
