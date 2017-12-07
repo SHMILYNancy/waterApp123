@@ -22,11 +22,29 @@ angular.module('starter.controllers', [])
   .controller('SetCtrl', function($scope, $stateParams, Chats) {
 
   })
+  .controller('myMoneyCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('myTicketCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('myIntegCtrl', function($scope, $stateParams, Chats) {
+
+  })
+
 
   .controller('LoginCtrl', function($scope, $stateParams, Chats) {
 
   })
+  .controller('NofuCtrl', function($scope, $stateParams, Chats) {
 
+  })
+  .controller('CooperateCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('DiscountCtrl', function($scope, $stateParams, Chats) {
+
+  })
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })

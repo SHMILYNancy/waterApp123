@@ -20,9 +20,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "nofu";
+@import "discount";
 @import "tab-home";
 @import "mine";
 @import "car";
+@import "index-banner1";
+@import "index-banner2";
+
 
 //导航条样式
 .bar.bar-stable{
@@ -38,4 +43,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   color: #fff;
   width:100%;
 }
+button.button.back-button.buttons.button-clear.header-item {
+  color: #fff;
+}
 
+ion-content{
+  background-color: #f7f7f7;
+}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+  padding: 0;
+  margin: 0;
+  font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 13px; text-align: left ;
+}

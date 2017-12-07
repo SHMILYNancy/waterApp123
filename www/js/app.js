@@ -5,6 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
+
+
+
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
@@ -23,7 +26,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+
+  .directive('hideTabs',function($rootScope){
+    return {
+      restrict: 'AE',
+      link: function ($scope) {
+        $rootScope.hideTabs = 'tabs-item-hide';
+        $scope.$on('$destroy',function(){
+          $rootScope.hideTabs = ' ';
+        })
+      }
+    }
+  })
+
+
+
+
+
+  .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -58,7 +78,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+    .state('tab.banner1', {
+      url: '/banner1',
+      views: {
+        'tab-home': {
+          templateUrl: 'templates/home-banner1.html'
+        }
+      }
+    })
+    .state('tab.banner2', {
+      url: '/banner2',
+      views: {
+        'tab-home': {
+          templateUrl: 'templates/home-banner2.html'
+        }
+      }
+    })
     .state('tab.mine', {
       url: '/mine',
       views: {
@@ -72,7 +107,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/set',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-set.html',
+          templateUrl: 'templates/mine/mine-set.html',
           controller: 'SetCtrl'
         }
       }
@@ -81,10 +116,115 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/news',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine-news.html'
+          templateUrl: 'templates/mine/mine-news.html'
         }
       }
     })
+    .state('tab.myMoney', {
+      url: '/myMoney',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-myMoney.html',
+          controller: 'myMoneyCtrl'
+        }
+      }
+    })
+    .state('tab.myTicket', {
+      url: '/myTicket',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-myTicket.html',
+          controller: 'myTicketCtrl'
+        }
+      }
+    })
+    .state('tab.myInteg', {
+      url: '/myInteg',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-myInteg.html',
+          controller: 'myIntegCtrl'
+        }
+      }
+    })
+
+    .state('tab.shdz', {
+      url: '/shdz',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-shdz.html'
+        }
+      }
+    })
+    .state('tab.yjqgl', {
+      url: '/yjqgl',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-yjqgl.html'
+        }
+      }
+    })
+    .state('tab.smyz', {
+      url: '/smyz',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-smyz.html'
+        }
+      }
+    })
+    .state('tab.kfp', {
+      url: '/kfp',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-kfp.html'
+        }
+      }
+    })
+    .state('tab.jfsc', {
+      url: '/jfsc',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-jfsc.html'
+        }
+      }
+    })
+    .state('tab.yjfk', {
+      url: '/yjfk',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-yjfk.html'
+        }
+      }
+    })
+    .state('tab.zxkf', {
+      url: '/zxkf',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-zxkf.html'
+        }
+      }
+    })
+    .state('tab.wdfx', {
+      url: '/wdfx',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-wdfx.html'
+        }
+      }
+    })
+    .state('tab.gywm', {
+      url: '/gywm',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-gywm.html'
+        }
+      }
+    })
+
+
+
+
+
     .state('tab.login', {
       url: '/login',
       views: {
@@ -105,14 +245,42 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
+    url: '/chats/:chatId',
+    views: {
+      'tab-chats': {
+        templateUrl: 'templates/chat-detail.html',
+        controller: 'ChatDetailCtrl'
       }
-    })
+    }
+  })
+  .state('tab.nofu', {
+    url: '/nofu',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-nofu.html',
+        controller: 'NofuCtrl'
+      }
+    }
+  })
+
+  .state('tab.cooperate', {
+    url: '/cooperate',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-cooperate.html',
+        controller: 'CooperateCtrl'
+      }
+    }
+  })
+  .state('tab.discount', {
+    url: '/discount',
+    views: {
+      'tab-home': {
+        templateUrl: 'templates/home-discount.html',
+        controller: 'DiscountCtrl'
+      }
+    }
+  })
 
   .state('tab.account', {
     url: '/account',
@@ -125,6 +293,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/home');
 
 });
