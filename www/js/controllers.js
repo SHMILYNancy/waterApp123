@@ -15,9 +15,7 @@ angular.module('starter.controllers', [])
   // })
 // 坐标
 
-.controller('ChatsCtrl','$scope', function($scope, Chats) {
-
-
+.controller('ChatsCtrl',function($scope, Chats) {
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
     Chats.remove(chat);
