@@ -86,6 +86,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.banner2', {
+      url: '/banner2',
+      views: {
+        'tab-home': {
+          templateUrl: 'templates/home-banner2.html'
+        }
+      }
+    })
     .state('tab.mine', {
       url: '/mine',
       views: {
