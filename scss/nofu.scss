@@ -11,6 +11,7 @@ p{
 }
 p.msg {
   font-size: 18px;
+  margin:5px 0;
 }
 p.price {
   color: red;
@@ -25,25 +26,29 @@ p.price {
   color: #444;
   margin-right: 55px;
 }
-
-h4{
+.y_shang{
+  background: #fff;
   padding:5px 10px;
+}
+.y_shang h4{
   color: #666;
   font-weight: normal;
   font-size: 16px;
-  border-bottom:1px solid #f7f6f6;
+  border-bottom:1px solid #9e9e9e;
 }
 .explain p:first-child{
   font-size: 22px;
   color: cornflowerblue;
+  margin:10px 0;
 }
 .explain p:nth-child(2){
   font-size: 16px;
   color: red;
+  margin:5px 0;
 }
 .explain p:nth-child(3),.explain p:nth-child(4){
   font-size: 14px;
-  margin:0;
+  margin:5px 0;
 }
 img.msg-t {
   width: 100%;
