@@ -1,12 +1,12 @@
 angular.module('starter.controllers', [])
 
   .controller('DashCtrl', function($scope) {})
-  .controller('HomeCtrl', function($scope,$stateParams) {
+  .controller('HomeCtrl', function($scope) {
     $scope.title='首页';
     $scope.liss = [
       {href:'#/tab/nofu',img:'./img/index_img/yjds.png',txt:'一键订水',id:1},
       {href:'#/tab/cooperate',img:'./img/index_img/hzpp.png',txt:'合作品牌',id:2},
-      {href:'#/tab/nofu',img:'./img/index_img/zxcz.png',txt:'在线充值',id:3},
+      {href:'#/tab/chong',img:'./img/index_img/zxcz.png',txt:'在线充值',id:3},
       {href:'#/tab/discount',img:'./img/index_img/hdzq.png',txt:'活动专区',id:4}
     ]
   })
@@ -28,7 +28,33 @@ angular.module('starter.controllers', [])
     Chats.remove(chat);
   };
 })
+  .controller( 'banner2Ctrl',['$scope','$ionicActionSheet','$timeout' ,function($scope,$ionicActionSheet,$timeout){
+    $scope.show = function() {
 
+      var hideSheet = $ionicActionSheet.show({
+        buttons: [
+          { text: '<span class="icon ion-share"></span>微信好友' },
+          { text: '朋友圈' },
+          { text: 'QQ' },
+          { text: 'QQ空间' }
+        ],
+        // destructiveText: 'Delete',
+        titleText: '分想到:',
+        cancelText: '取消',
+        cancel: function() {
+          // add cancel code..
+        },
+        buttonClicked: function(index) {
+          return true;
+        }
+      });
+
+      // $timeout(function() {
+      //   hideSheet();
+      // }, 2000);
+
+    };
+  }])
   .controller('MineCtrl', function($scope, $stateParams, Chats) {
   })
   .controller('yeCtrl', function($scope, $stateParams, Chats) {
