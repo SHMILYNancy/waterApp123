@@ -58,24 +58,35 @@ p.con-msg{
   text-indent: 28px;
   color: #666;
   padding-right:10px;
+  margin-bottom:100px;
 }
-ion-footer-bar.bar-assertive.bar.bar-footer.has-tabs {
-  background-color: #0000b0;
-}
+
 .ion-ios-cart:before {
   font-size: 26px;
   color: #fff;
   border-radius: 50%;
   background: #00BCD4;
-  width: 35px;
+  width: 40px;
   text-align: center;
-  height: 35px;
-  line-height: 35px;
+  height: 40px;
+  line-height: 40px;
 }
 .nofu-footer{
   background: #323232;
+  height:60px;
+  overflow: hidden;
+  padding:5px;
+  position: fixed;
+  width:100%;
+  bottom:0px;
+}
+.buttons {
+  display: inline-block;
+  float: right;
 }
 button.button {
   background: red;
+  height:45px;
   color: #fff;
+  margin-right: 5px;
 }
