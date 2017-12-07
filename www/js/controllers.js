@@ -1,8 +1,11 @@
 angular.module('starter.controllers', [])
 
   .controller('DashCtrl', function($scope) {})
-  .controller('HomeCtrl', function($scope) {
+  .controller('HomeCtrl', function($scope,$location) {
     $scope.title='首页';
+    $scope.go=function () {
+      $location.path('/tab/nofu');
+    };
     $scope.liss = [
       {href:'#/tab/nofu',img:'./img/index_img/yjds.png',txt:'一键订水',id:1},
       {href:'#/tab/cooperate',img:'./img/index_img/hzpp.png',txt:'合作品牌',id:2},
