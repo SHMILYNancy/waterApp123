@@ -28,7 +28,10 @@
   text-align: center;
   vertical-align: middle;
 }
-
+.my-slide .banner{
+  width: 100%;
+  height: 150px;
+}
 .my-slide img{
   width: 100%;
   height: 100%;
@@ -51,6 +54,7 @@
 .ul li p{
   font-size:14px;
   font-weight:bold;
+  text-align: center;
 }
 .part1{
   width: 100%;
@@ -130,7 +134,7 @@
 .part2 .p2-img2{
   position: absolute;
   top: 50%;
-  right:5%;
+  right:2%;
   width: 42px;
   height: 30px;
 }
