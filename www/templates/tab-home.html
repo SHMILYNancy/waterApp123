@@ -18,31 +18,12 @@
     </ion-slide-box>
     <!--内容-->
     <ul class="ul">
-      <li>
-        <a href="#/tab/nofu">
-          <img src="./img/index_img/yjds.png" alt="">
-          <p>一键订水</p>
+      <li ng-repeat="x in liss">
+        <a ng-href="{{x.href}}">
+          <img ng-src="{{x.img}}" alt="">
+          <p>{{x.txt}}</p>
         </a>
       </li>
-      <li>
-        <a href="#/tab/cooperate">
-          <img src="./img/index_img/hzpp.png" alt="">
-          <p>合作品牌</p>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="./img/index_img/zxcz.png" alt="">
-          <p>在线充值</p>
-        </a>
-      </li>
-      <li>
-        <a href="#/tab/discount">
-          <img src="./img/index_img/hdzq.png" alt="">
-          <p>活动专区</p>
-        </a>
-      </li>
-
     </ul>
     <div class="part1">
       <div class="left">

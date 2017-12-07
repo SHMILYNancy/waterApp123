@@ -1,9 +1,14 @@
 angular.module('starter.controllers', [])
 
   .controller('DashCtrl', function($scope) {})
-  .controller('HomeCtrl', function($scope) {
+  .controller('HomeCtrl', function($scope,$stateParams) {
     $scope.title='首页';
-
+    $scope.liss = [
+      {href:'#/tab/nofu',img:'./img/index_img/yjds.png',txt:'一键订水',id:1},
+      {href:'#/tab/cooperate',img:'./img/index_img/hzpp.png',txt:'合作品牌',id:2},
+      {href:'#/tab/nofu',img:'./img/index_img/zxcz.png',txt:'在线充值',id:3},
+      {href:'#/tab/discount',img:'./img/index_img/hdzq.png',txt:'活动专区',id:4}
+    ]
   })
   // .controller('GeolocationCtrl', function($scope,$cordovaGeolocation) {
   //   $cordovaGeolocation.getCurrentPosition().then(function (position) {
@@ -25,7 +30,6 @@ angular.module('starter.controllers', [])
 })
 
   .controller('MineCtrl', function($scope, $stateParams, Chats) {
-
   })
   .controller('yeCtrl', function($scope, $stateParams, Chats) {
 
