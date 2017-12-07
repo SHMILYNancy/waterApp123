@@ -5,7 +5,15 @@ angular.module('starter.controllers', [])
     $scope.title='首页';
 
   })
-
+  // .controller('GeolocationCtrl', function($scope,$cordovaGeolocation) {
+  //   $cordovaGeolocation.getCurrentPosition().then(function (position) {
+  //     console.log(position);
+  //   }).catch(function (err) {
+  //     console.log(err);
+  //   })
+  //
+  // })
+// 坐标
 
 .controller('ChatsCtrl','$scope', function($scope, Chats) {
 

@@ -1,0 +1,49 @@
+.l-all {
+  margin-top:40px;
+}
+.l-phon {
+  width: 95%;
+  border-bottom: 1px solid #b2b2b2;
+  margin-left: 10px;
+  padding-top:15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.l-phon span {
+  font-size: 25px;
+  color: #00ff96;
+  vertical-align: middle;
+}
+.l-phon input {
+  display: inline-block;
+  width: 60%;
+  height:40px;
+  line-height: 40px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.l-phon .l-may {
+  float: right;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+.l-reg button{
+  width: 95%;
+  height:50px;
+  background-color: #999998;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 40px 0 20px 3px;
+}
+.l-reg {
+  text-align: center;
+}
+.l-reg span {
+  margin-top:130px;
+  color: #b2b2b2;
+}
+.l-reg a {
+  color: #00c8c8;
+}

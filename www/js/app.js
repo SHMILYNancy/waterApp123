@@ -8,8 +8,8 @@
 
 
 
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
-
+angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
+//,'ionic.native'
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -251,6 +251,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         'tab-mine': {
           templateUrl: 'templates/tab-login.html',
           controller: 'LoginCtrl'
+        }
+      }
+    })
+    .state('tab.regist', {
+      url: '/regist',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/tab-regist.html'
+        }
+      }
+    })
+    .state('tab.reset', {
+      url: '/reset',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/tab-reset.html'
         }
       }
     })
