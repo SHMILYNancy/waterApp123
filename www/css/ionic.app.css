@@ -9960,41 +9960,6 @@ p.discount {
   margin-bottom: 10px;
   padding: 10px; }
 
-h3.y_titlet {
-  text-align: center;
-  font-size: 24px;
-  margin: 10px; }
-
-.y_time {
-  position: relative;
-  padding: 0 10px; }
-
-.y_time span:nth-child(1) {
-  color: #666; }
-
-.y_time span:nth-child(2) {
-  color: green;
-  float: right; }
-
-.y_referral {
-  padding: 10px; }
-
-.y_referral h4 {
-  font-size: 18px;
-  text-align: center; }
-
-.y_referral h5 {
-  font-size: 14px;
-  text-align: center;
-  color: #666666; }
-
-.y_referral h6 {
-  color: #666666; }
-
-.y_referral p {
-  color: #666666;
-  text-indent: 28px; }
-
 .wrapper {
   width: 100%;
   height: 100%;
