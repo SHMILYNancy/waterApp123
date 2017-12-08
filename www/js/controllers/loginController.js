@@ -1,12 +1,49 @@
 angular.module('login.controllers', [])
-  .controller('LoginCtrl', function($scope, $stateParams, Chats) {
+  .controller('LoginCtrl', function($scope, $location) {
 
+    $scope.login = function () {
+      var use=/^1[3|4|5|7|8]\d{9}$/g;
+      var user=use.test($('#num').val());
+      var pass= $('#pass').val().length >= 6 ;
+      if (!user){
+        alert('请输入正确的手机号');
+      }
+      if (!pass){
+        alert('密码不能少于6位');
+      }
+      // ajax请求
+      if (user && pass){
+        $.ajax({
+          type:"post",
+          url:"http://10.0.29.80/demo/waterApp/www/php/index.php?a=Login&b=login",
+          async:true,
+          dataType:'json',
+          data:{
+            'u_name':$('#num').val(),
+            'u_password':$('#pass').val()
+          },
+          success:function (data) {
+            // alert(data.msg);
+            console.log(data.code);
+            if(data.code==1){
+
+              $scope.$apply(function () {
+                $location.path('/tab/mine');
+                document.cookie='u_name='+$('#num').val();
+              })
+            }
+
+          }
+        });
+      }
+    }
   })
   .controller('RegisterCtrl', function($scope) {
     $scope.register = function () {
-      var use=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/g;
+      var use=/^1[3|4|5|7|8]\d{9}$/;
       var user=use.test($('#num').val());
       var pass= $('#pass').val().length >= 6 ;
+      console.log($('#pass').val());
       var again =$('#pass').val() == $('#again').val();
       if (!user){
         alert('请输入正确的手机号');
@@ -23,16 +60,16 @@ angular.module('login.controllers', [])
           type:"post",
           url:"http://10.0.29.80/demo/waterApp/www/php/index.php?a=Login&b=sign",
           async:true,
-          dataType:'json',
+          // dataType:'json',
           data:{
-            'username':user.val(),
-            'pass':pass.val()
+            'u_name':$('#num').val(),
+            'u_password':$('#pass').val()
           },
           success:function (data) {
-            // alert(data.msg)
+            // alert(data.msg);
             console.log(data);
           }
         });
       }
     }
-  });
+  })
