@@ -224,8 +224,7 @@ angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'start
       url: '/yjfk',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine/mine-yjfk.html',
-          controller:'yjfkCtrl'
+          templateUrl: 'templates/mine/mine-yjfk.html'
         }
       }
     })
@@ -335,8 +334,7 @@ angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'start
     url: '/ph',
     views: {
       'tab-home': {
-        templateUrl: 'templates/home-ph.html',
-        controller:'PhCtrl'
+        templateUrl: 'templates/home-ph.html'
       }
     }
   })
