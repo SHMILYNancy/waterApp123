@@ -90,7 +90,8 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       url: '/banner2',
       views: {
         'tab-home': {
-          templateUrl: 'templates/home-banner2.html'
+          templateUrl: 'templates/home-banner2.html',
+          controller:'banner2Ctrl'
         }
       }
     })
@@ -258,7 +259,8 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       url: '/regist',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/tab-regist.html'
+          templateUrl: 'templates/tab-regist.html',
+          controller: 'RegisterCtrl'
         }
       }
     })

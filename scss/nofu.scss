@@ -58,10 +58,9 @@ p.con-msg{
   text-indent: 28px;
   color: #666;
   padding-right:10px;
+  margin-bottom:100px;
 }
-ion-footer-bar.bar-assertive.bar.bar-footer.has-tabs {
-  background-color: #0000b0;
-}
+
 .ion-ios-cart:before {
   font-size: 26px;
   color: #fff;
@@ -77,6 +76,9 @@ ion-footer-bar.bar-assertive.bar.bar-footer.has-tabs {
   height:60px;
   overflow: hidden;
   padding:5px;
+  position: fixed;
+  width:100%;
+  bottom:0px;
 }
 .buttons {
   display: inline-block;
