@@ -213,7 +213,8 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       url: '/yjfk',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine/mine-yjfk.html'
+          templateUrl: 'templates/mine/mine-yjfk.html',
+          controller:'yjfkCtrl'
         }
       }
     })
