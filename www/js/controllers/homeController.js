@@ -1,5 +1,5 @@
 angular.module('home.controllers', [])
-  
+
   .controller('HomeCtrl', function($scope,$location) {
     $scope.title='首页';
     $scope.go=function () {
@@ -22,6 +22,30 @@ angular.module('home.controllers', [])
   // })
   // 坐标
   .controller( 'banner2Ctrl',['$scope','$ionicActionSheet','$timeout' ,function($scope,$ionicActionSheet,$timeout){
+    $scope.show = function() {
+
+      var hideSheet = $ionicActionSheet.show({
+        buttons: [
+          { text: '<span class="icon ion-share"></span>微信好友' },
+          { text: '朋友圈' },
+          { text: 'QQ' },
+          { text: 'QQ空间' }
+        ],
+        // destructiveText: 'Delete',
+        titleText: '分想到:',
+        cancelText: '取消',
+        cancel: function() {
+          // add cancel code..
+        },
+        buttonClicked: function(index) {
+          return true;
+        }
+      });
+
+
+    };
+  }])
+  .controller( 'PhCtrl',['$scope','$ionicActionSheet','$timeout' ,function($scope,$ionicActionSheet,$timeout){
     $scope.show = function() {
 
       var hideSheet = $ionicActionSheet.show({
