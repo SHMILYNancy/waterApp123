@@ -137,6 +137,14 @@ angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'start
         }
       }
     })
+    .state('tab.duihuan', {
+      url: '/duihuan',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-duihuan.html'
+        }
+      }
+    })
     .state('tab.chong', {
       url: '/chong',
       views: {
