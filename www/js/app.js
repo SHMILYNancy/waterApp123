@@ -326,7 +326,8 @@ angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'start
     url: '/ph',
     views: {
       'tab-home': {
-        templateUrl: 'templates/home-ph.html'
+        templateUrl: 'templates/home-ph.html',
+        controller:'PhCtrl'
       }
     }
   })
