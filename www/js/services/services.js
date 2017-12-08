@@ -1,4 +1,4 @@
-angular.module('starter.services', ['address.services'])
+angular.module('starter.services', ['address.services','login.services'])
 
   .factory('Address',function ($http) {
     return {

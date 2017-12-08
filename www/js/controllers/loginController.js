@@ -1,75 +1,42 @@
 angular.module('login.controllers', [])
-  .controller('LoginCtrl', function($scope, $location) {
-
+  .controller('LoginCtrl', ['$scope', '$location','login','$cookies',function($scope, $location,login,$cookie) {
+    $scope.user={};
     $scope.login = function () {
-      var use=/^1[3|4|5|7|8]\d{9}$/g;
-      var user=use.test($('#num').val());
-      var pass= $('#pass').val().length >= 6 ;
-      if (!user){
-        alert('请输入正确的手机号');
-      }
-      if (!pass){
-        alert('密码不能少于6位');
-      }
-      // ajax请求
-      if (user && pass){
-        $.ajax({
-          type:"post",
-          url:"http://10.0.29.80/demo/waterApp/www/php/index.php?a=Login&b=login",
-          async:true,
-          dataType:'json',
-          data:{
-            'u_name':$('#num').val(),
-            'u_password':$('#pass').val()
-          },
-          success:function (data) {
-            // alert(data.msg);
-            console.log(data.code);
-            if(data.code==1){
-
-              $scope.$apply(function () {
-                $location.path('/tab/mine');
-                document.cookie='u_name='+$('#num').val();
-              })
-            }
-
-          }
-        });
-      }
+      login.fun($scope.user,'login').success(function (data) {
+        if(data.code==1) {
+          $location.path('/tab/mine');
+          var expireDate = new Date();
+          expireDate.setDate(expireDate.getDate() + 7);
+          $cookie.put('u_name',$scope.user.u_name,{'expires':expireDate});
+        }
+      })
     }
-  })
-  .controller('RegisterCtrl', function($scope) {
+  }])
+  .controller('RegisterCtrl', ['$scope','$location','login',function($scope,$location,login) {
+    $scope.user={};
     $scope.register = function () {
-      var use=/^1[3|4|5|7|8]\d{9}$/;
-      var user=use.test($('#num').val());
-      var pass= $('#pass').val().length >= 6 ;
-      console.log($('#pass').val());
-      var again =$('#pass').val() == $('#again').val();
-      if (!user){
-        alert('请输入正确的手机号');
-      }
-      if (!pass){
-        alert('密码不能少于6位');
-      }
-      if (!again){
-        alert('请确认密码');
-      }
-      // ajax请求
-      if (user && pass && again){
-        $.ajax({
-          type:"post",
-          url:"http://10.0.29.80/demo/waterApp/www/php/index.php?a=Login&b=sign",
-          async:true,
-          // dataType:'json',
-          data:{
-            'u_name':$('#num').val(),
-            'u_password':$('#pass').val()
-          },
-          success:function (data) {
-            // alert(data.msg);
-            console.log(data);
-          }
-        });
-      }
+      login.fun($scope.user,'sign').success(function (data) {
+        console.log(data);
+        alert(data.msg);
+        if(data.code==1) {
+          $location.path('/tab/login');
+
+        }
+      })
     }
-  })
+  }])
+  .controller('ResetCtrl', ['$scope','$location','login','$cookies',function($scope,$location,login,$cookies) {
+  $scope.user={};
+  $scope.user.u_name=$cookies.get('u_name');
+
+      $scope.reset = function () {
+      login.fun($scope.user,'update').success(function (data) {
+        alert(data.msg);
+        if(data.code==1) {
+          $location.path('/tab/login');
+        }
+      })
+    }
+
+
+}]);

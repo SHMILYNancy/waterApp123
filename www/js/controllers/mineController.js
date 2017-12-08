@@ -1,6 +1,9 @@
 angular.module('mine.controllers', [])
-  .controller('MineCtrl', function($scope, $stateParams, Chats) {
-  })
+  .controller('MineCtrl',  ['$scope','$location','login','$cookies',function($scope,$location,login,$cookies) {
+    // $scope.user={};
+    $scope.user=$cookies.get('u_name');
+  }])
+
   .controller('yeCtrl', function($scope, $stateParams, Chats) {
 
   })

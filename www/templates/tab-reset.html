@@ -3,7 +3,7 @@
     <div class="l-all">
       <div class="l-phon">
         <span class="ion-ipad"></span>
-        <input type="text" placeholder="请输入手机号">
+        <input type="text" placeholder="请输入手机号" disabled="" ng-model="user.u_name">
       </div>
       <div class="l-phon">
         <span class="ion-chatbox-working"></span>
@@ -12,7 +12,7 @@
       </div>
       <div class="l-phon">
         <span class="ion-android-lock"></span>
-        <input type="text" placeholder="设置密码，至少6位">
+        <input type="text" ng-model="user.u_password" placeholder="设置密码，至少6位">
       </div>
       <div class="l-phon">
         <span class="ion-android-lock"></span>
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="l-reg">
-      <button>完成</button>
+      <button ng-click="reset()">完成</button>
     </div>
   </ion-content>
 </ion-view>

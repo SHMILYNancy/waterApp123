@@ -8,7 +8,7 @@
     </ion-nav-title>
   <ion-nav-view name="mine-set"></ion-nav-view>
 
-  <ion-content>
+  <ion-content ng-init="user='立即登录'">
     <ion-list>
 
       <div class="mine-header-bottom">
@@ -17,7 +17,7 @@
             <h3>
               <i class="ion-waterdrop"></i>
             </h3>
-            <span class="mine-login">立即登录</span>
+            <span class="mine-login">{{user}}</span>
             <i class="icon ion-chevron-right icon-accessory"></i>
           </div>
         </a>

@@ -9,7 +9,7 @@
 
 
 
-angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic','ionic.native', 'ngCookies','starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -67,6 +67,22 @@ angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'start
       }
     }
   })
+    .state('tab.find1', {
+      url: '/find1',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/find/dash-find1.html'
+        }
+      }
+    })
+    .state('tab.find2', {
+      url: '/find2',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/find/dash-find2.html'
+        }
+      }
+    })
     .state('tab.home', {
       url: '/home',
       views: {
@@ -268,7 +284,8 @@ angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'start
       url: '/reset',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/tab-reset.html'
+          templateUrl: 'templates/tab-reset.html',
+          controller:'ResetCtrl'
         }
       }
     })
