@@ -1,34 +1,26 @@
 <ion-view view-title="购物车">
+  <ion-nav-title>
+    购物车
+  </ion-nav-title>
   <ion-content class="car">
+
     <div class="shopped">已选商品</div>
 
     <ion-list class="shopped_list" class="item-avatar item-icon-right">
-      <ion-item>
-        <img src="../img/car1.png" alt="">
-        <div class="good_content">
-          <h3>农夫山泉（适合婴儿喝）</h3>
-          <p><span class="zgood_price">￥98.00</span><span class="zcount"><span class="jian fh">+</span><span class="good_num">1</span><span class="jia fh">-</span></span></p>
-        </div>
+
+      <ion-item  ng-repeat="x in arr">
+      <img src="../img/car1.png" alt="">
+      <div class="good_content">
+      <h3>{{x.name}}</h3>
+      <p><span class="zgood_price">{{x.price}}</span><span class="zcount"><span class="jian fh" ng-click="jia($index)">+</span><span class="good_num">{{x.number}}</span><span class="jia fh" ng-click="jian($index)">-</span></span></p>
+      </div>
       </ion-item>
-      <ion-item>
-        <img src="../img/car1.png" alt="">
-        <div class="good_content">
-          <h3>农夫山泉（适合婴儿喝）</h3>
-          <p><span class="zgood_price">￥98.00</span><span class="zcount"><span class="jian fh">+</span><span class="good_num">1</span><span class="jia fh">-</span></span></p>
-        </div>
-      </ion-item>
-      <ion-item>
-        <img src="../img/car1.png" alt="">
-        <div class="good_content">
-          <h3>农夫山泉（适合婴儿喝）</h3>
-          <p><span class="zgood_price">￥98.00</span><span class="zcount"><span class="jian fh">+</span><span class="good_num">1</span><span class="jia fh">-</span></span></p>
-        </div>
-      </ion-item>
+      <div class="duoyude"></div>
     </ion-list>
 
   </ion-content>
   <div class=" g_count">
-    <p>合计: ￥<span>11</span></p><span class="gomon">去结算</span>
+    <p>合计:<span ng-bind="allSum()|currency:'￥：'">{{allSum}}</span></p><span class="gomon">去结算</span>
   </div>
 </ion-view>
 

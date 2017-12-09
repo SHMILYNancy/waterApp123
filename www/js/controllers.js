@@ -23,9 +23,7 @@ angular.module('starter.controllers', [])
   // })
 // 坐标
 
-.controller('ChatsCtrl','$scope', function($scope, Chats) {
-
-
+.controller('ChatsCtrl',function($scope, Chats) {
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
     Chats.remove(chat);
@@ -121,6 +119,21 @@ angular.module('starter.controllers', [])
 
   })
   .controller('DiscountCtrl', function($scope, $stateParams, Chats) {
+
+  })
+  .controller('yjfkCtrl', function($scope, $location) {
+    $scope.textar ='';
+
+    $scope.sub=function () {
+      if(document.getElementById('z_yjfk').value.length!==0){
+        alert('提交成功！');
+        $location.path('/tab/mine');
+
+      }else{
+        alert('提交失败，内容不能为空！');
+      }
+
+    }
 
   })
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {

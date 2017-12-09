@@ -8,8 +8,9 @@
 
 
 
-angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
-//,'ionic.native'
+
+angular.module('starter', ['ionic','ionic.native', 'starter.controllers', 'starter.services'])
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -43,9 +44,6 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
     }
   };
 })
-
-
-
 
 
   .config(function($stateProvider, $urlRouterProvider) {
@@ -118,7 +116,6 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
-
     .state('tab.news', {
       url: '/news',
       views: {
@@ -145,6 +142,14 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.duihuan', {
+      url: '/duihuan',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/mine-duihuan.html'
+        }
+      }
+    })
     .state('tab.chong', {
       url: '/chong',
       views: {
@@ -153,8 +158,6 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
-
-
     .state('tab.myTicket', {
       url: '/myTicket',
       views: {
@@ -173,12 +176,20 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
         }
       }
     })
-
     .state('tab.shdz', {
       url: '/shdz',
       views: {
         'tab-mine': {
           templateUrl: 'templates/mine/mine-shdz.html'
+        }
+      }
+    })
+    .state('tab.address', {
+      url: '/address',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/new-address.html',
+          controller:'addressCtrl'
         }
       }
     })
@@ -248,9 +259,6 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
     })
 
 
-
-
-
     .state('tab.login', {
       url: '/login',
       views: {
@@ -278,6 +286,7 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       }
     })
 
+
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -296,6 +305,8 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services'])
       }
     }
   })
+
+
   .state('tab.nofu', {
     url: '/nofu',
     views: {
