@@ -2,12 +2,10 @@
   <ion-nav-title >
     意见反馈
   </ion-nav-title>
-  <ion-content>
-    <div class="mine-news-cont">
-      <img src="./img/mine_img/news.png" alt="">
-      <span>暂无消息</span>
-    </div>
-
+  <ion-content class="z_yjfk0">
+    <textarea name="yjfk" id="z_yjfk" maxlength="300" autofocus ng-model="textar"></textarea>
+    <p class="z_yj"><span><span>{{textar.length}}</span>/300</span></p>
+    <button class="z_btnapply" id="submit" ng-click="sub()">提交</button>
   </ion-content>
 </ion-view>
 

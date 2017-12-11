@@ -10595,6 +10595,75 @@ a:hover {
   margin-top: 30px;
   color: white; }
 
+.z_yjfk {
+  position: relative; }
+
+#z_yjfk {
+  margin: 10px;
+  width: 95%;
+  padding: 10px;
+  height: 200px;
+  resize: none;
+  font-size: 16px;
+  line-height: 18px; }
+
+.z_yj {
+  position: absolute;
+  margin-top: -30px;
+  width: 100%; }
+
+.z_yj > span {
+  float: right;
+  margin-right: 20px; }
+
+.zsc_nav {
+  background: white;
+  padding: 5px 0; }
+
+.zsc_title {
+  margin-top: 10px;
+  background: white;
+  padding: 5px 0 5px 5px; }
+
+.zsc_nav p {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid #f5f5f5; }
+
+.zsc_nav .zsc_jl {
+  float: right;
+  border-style: none; }
+
+.zsc_jf span {
+  color: #f7773a;
+  margin-left: 5px; }
+
+.zsc_sp {
+  display: inline-block;
+  width: 50%;
+  background: white;
+  border-right: 1px solid #f5f5f5;
+  margin-top: 1px; }
+
+.zsc_sp:nth-child(odd) {
+  float: right; }
+
+.zsc_spname {
+  padding-left: 15px;
+  padding-top: 3px; }
+
+.zsc_selfjf {
+  padding-left: 15px; }
+
+.zsc_sp > img {
+  margin-left: 50px;
+  height: 140px; }
+
+.zsc_selfjf span {
+  color: #f7773a;
+  margin-right: 5px; }
+
 .banner-detail {
   text-align: center; }
 
