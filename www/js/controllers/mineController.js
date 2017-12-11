@@ -1,7 +1,14 @@
 angular.module('mine.controllers', [])
-  .controller('MineCtrl',  ['$scope','$location','login','$cookies',function($scope,$location,login,$cookies) {
-    // $scope.user={};
-    $scope.user=$cookies.get('u_name');
+  .controller('MineCtrl',  ['$scope','$location', '$cookies',function($scope,$location,$cookies) {
+    console.log($location.path());
+    $scope.user={};
+    var name=$cookies.get('u_name');
+    if(name){
+      $scope.user=$cookies.get('u_name');
+    }else{
+      $scope.user='立即登录';
+    }
+    console.log($scope.user);
   }])
 
   .controller('yeCtrl', function($scope, $stateParams, Chats) {
@@ -20,13 +27,20 @@ angular.module('mine.controllers', [])
 
   })
 
-  .controller('addressCtrl',['$scope', '$stateParams', 'Address', function($scope, $stateParams, Address) {
-    $scope.user={uname:'',usex:'',uphone:'',uaddress:''};
-    $scope.addrsubmit=function () {
-      console.log($scope.user);
-      Address.submit($scope.user).success(function (data) {
-        console.log(data);
+  .controller('addressCtrl',['$scope','$cookies','Address', function($scope,$cookies, Address) {
+      $scope.user={u_name:$cookies.get('u_name'),a_name:'',a_sex:'',a_phone:'',a_addr:''};
+      $scope.addrsubmit=function () {
+        console.log($scope.user);
+        if($cookies.get('u_name')){
+          Address.submit($scope.user).success(function (data) {
+            console.log(data);
 
-      });
-    }
+          });
+        }else{
+          alert('请登录');
+        }
+
+      }
+
+
   }]);
