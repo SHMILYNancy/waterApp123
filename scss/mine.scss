@@ -223,6 +223,25 @@ a:hover{
   bottom:0;
   font-size: 18px;
 }
+.mine-address{
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  padding:10px;
+}
+.mine-address>h4{
+  font-size: 18px;
+  font-weight:900;
+  margin-bottom: 10px;
+}
+.mine-address>span{
+  color: #999;
+  margin-right:10px;
+  font-size: 16px;
+}
+.mine-address .icon{
+  position: absolute;
+  right:10px;
+}
 
 //新增地址
 .new-address form{

@@ -41,7 +41,7 @@ class ModelController{
 			$str.=$key."='".$value."',";
 		}
 		$str=substr($str,0,strlen($str)-1);
-		$row=self::$pdo->exec("UPDATE {$table} SET {$str} WHERE u_name={$name}");
+		$row=self::$pdo->exec("UPDATE {$table} SET {$str} WHERE $name");
 		return $row;
 	}
 }

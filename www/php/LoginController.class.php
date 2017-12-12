@@ -41,7 +41,7 @@ class LoginController{
   		$data=json_decode(file_get_contents('php://input'),true);
   		$user=$data['u_name'];
       $data['u_password']=$this->md($data['u_password']);
-      $row=M()->update_sql('tb_user',$data,$user);
+      $row=M()->update_sql('tb_user',$data,"u_name='{$user}'");
       if($row){
         echo '{"code":1,"msg":"修改成功"}';
       }else{

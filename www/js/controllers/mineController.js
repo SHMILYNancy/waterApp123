@@ -1,14 +1,14 @@
 angular.module('mine.controllers', [])
   .controller('MineCtrl',  ['$scope','$location', '$cookies',function($scope,$location,$cookies) {
-    console.log($location.path());
-    $scope.user={};
-    var name=$cookies.get('u_name');
-    if(name){
-      $scope.user=$cookies.get('u_name');
-    }else{
-      $scope.user='立即登录';
-    }
-    console.log($scope.user);
+    $scope.user='立即登录';
+    $scope.$on('$ionicView.enter',function (event) {
+      var name=$cookies.get('u_name');
+      if(name){
+        $scope.user=$cookies.get('u_name');
+      }else{
+        $scope.user='立即登录';
+      }
+    })
   }])
 
   .controller('yeCtrl', function($scope, $stateParams, Chats) {
@@ -32,15 +32,47 @@ angular.module('mine.controllers', [])
       $scope.addrsubmit=function () {
         console.log($scope.user);
         if($cookies.get('u_name')){
-          Address.submit($scope.user).success(function (data) {
+          Address.fun($scope.user,'submit').success(function (data) {
             console.log(data);
-
           });
         }else{
           alert('请登录');
         }
-
       }
+  }])
+  .controller('shdzCtrl',['$scope','$cookies','Address', function($scope,$cookies, Address) {
+    $scope.$on('$ionicView.enter',function (event){
+      $scope.user=$cookies.get('u_name');
+      $scope.flag=false;
+      if($scope.user){
+        $scope.flag=true;
+        Address.fun($scope.user,'select').success(function (data) {
+          $scope.addrs=data;
+          console.log($scope.addrs);
+        })
+      }
+    })
 
 
-  }]);
+  }])
+  .controller('resetaddrCtrl', ['$scope','$cookies', '$stateParams','$location', 'Address',function($scope,$cookies, $stateParams, $location,Address) {
+    $scope.user=$cookies.get('u_name');
+    console.log($stateParams.id);
+    Address.fun($scope.user,'select').success(function (data) {
+       data.forEach(function (a,b) {
+        if(a.a_id==$stateParams.id){
+          $scope.user=a;
+        }
+      });
+    });
+    $scope.update=function () {
+      Address.fun($scope.user,'update').success(function (data) {
+        if(data.code==1){
+          alert(data.msg);
+          $location.path('/tab/shdz');
+        }else{
+          alert(data.msg);
+        }
+      })
+    }
+}]);

@@ -3,14 +3,20 @@
     收货地址
   </ion-nav-title>
   <ion-content style="background-color: #f7f7f7;">
-    <div class="mine-news-cont">
+    <div ng-hide="flag" class="mine-news-cont">
       <img src="./img/mine_img/news.png" alt="">
       <span>暂无收货地址</span>
+    </div>
+    <div ng-show="flag" ng-repeat="x in addrs" class="mine-address">
+      <h4>{{x.a_addr}}</h4>
+      <span>{{x.u_name}}</span>
+      <span>{{x.a_phone}}</span>
+      <a href="#/tab/resetaddr/{{x.a_id}}"><span class="icon ion-edit"></span></a>
     </div>
   </ion-content>
   <a href="#/tab/address">
     <div class="mine-addr-bottom">
-      <i class="ion-ios-plus-outline"></i>
+      <i class="icon ion-ios-plus-outline"></i>
       新增地址
     </div>
   </a>

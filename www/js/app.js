@@ -196,7 +196,8 @@ angular.module('starter', ['ionic','ionic.native', 'ngCookies','starter.controll
       url: '/shdz',
       views: {
         'tab-mine': {
-          templateUrl: 'templates/mine/mine-shdz.html'
+          templateUrl: 'templates/mine/mine-shdz.html',
+          controller:'shdzCtrl'
         }
       }
     })
@@ -206,6 +207,15 @@ angular.module('starter', ['ionic','ionic.native', 'ngCookies','starter.controll
         'tab-mine': {
           templateUrl: 'templates/mine/new-address.html',
           controller:'addressCtrl'
+        }
+      }
+    })
+    .state('tab.resetaddr', {
+      url: '/resetaddr/:id',
+      views: {
+        'tab-mine': {
+          templateUrl: 'templates/mine/reset-address.html',
+          controller:'resetaddrCtrl'
         }
       }
     })
